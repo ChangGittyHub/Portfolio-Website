@@ -60,7 +60,7 @@ document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
             document.title = "Portfolio | Darren Chang";
-            $("#favicon").attr("href", "assets/images/favicon.png");
+            $("#favicon").attr("href", "assets/images/friendly.jpg");
         }
         else {
             document.title = "Come Back To Portfolio";
@@ -71,7 +71,7 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["frontend development", "backend development", "web designing", "android development", "web development"],
+    strings: ["software engineering", "backend development", "healthtech", "tennis", "photography"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
@@ -162,13 +162,13 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 
 
 // pre loader start
-// function loader() {
-//     document.querySelector('.loader-container').classList.add('fade-out');
-// }
-// function fadeOut() {
-//     setInterval(loader, 500);
-// }
-// window.onload = fadeOut;
+function loader() {
+    document.querySelector('.loader-container').classList.add('fade-out');
+}
+function fadeOut() {
+    setInterval(loader, 500);
+}
+window.onload = fadeOut;
 // pre loader end
 
 // disable developer mode
